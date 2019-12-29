@@ -13,6 +13,12 @@ Things you may want to cover:
 
 * Database creation
 
+##tasksテーブル
+|Column|Type|Optiions|
+|------|----|--------|
+|name|string|null:false,index:true|
+
+
 * Database initialization
 
 * How to run the test suite
