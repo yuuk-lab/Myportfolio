@@ -1,10 +1,7 @@
 <h1>タスクの内容</h1>
 <div>
   <%= form_tag('/tasks', method: :post) do %>
-    <h3>
-      タスクを作成する
-    </h3>
-    <input placeholder="タスクを入力してください" type="text" name="name">
-    <input type="submit" value="作成">
+    <input placeholder="タスクを入力してください" type="text" class="task_area" name="name">
+    <input type="submit" class="submit_btn" value="作成">
   <% end %>
 </div>

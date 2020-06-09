@@ -1,5 +1,5 @@
 <div class ="header">
-<p class="title">Check list</p>
+<h2 class="title">Check list</h2>
 
 <%= link_to 'タスク作成', '/new', class: "btn" %>
 </div>
@@ -10,9 +10,9 @@
   <div class="cp_ipcheck">
   <label class="tag">
   <input type="checkbox" class="option-input02 checkbox" checked />
-  <%= task.name %>
+  <p class = "task_name" ><%= task.name %></p>
   </label>
-  <%= link_to '削除', "/tasks/#{task.id}", method: :delete, :class => 'main' %>
+  <%= link_to '削除', "/tasks/#{task.id}", method: :delete, :class => 'btn main' %>
   </div>
 <% end %>
 

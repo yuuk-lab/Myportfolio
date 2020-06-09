@@ -1,27 +1,144 @@
+
+body{
+	margin: 0px;
+}
+
+h1{
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+	padding: 20px;
+	background-color: #1da1f3;
+	color: white;
+}
+
+.task_area{
+	margin-left: 40%;
+	width: 300px;
+	height: 50px;
+	font-size: 20px;
+	border-radius: 10px;
+}
+.submit_btn{
+	height: 40px;
+	width: 70px;
+	-webkit-appearance: none;
+    border-radius: 10px;
+}
+
+#re_btn{
+margin-left: 45%;
+}
+
 .header{
   
   margin:0px;
-  background-color: orangered;
+  background-color: skyblue;
 }
 .title{
-  display:inline-block;
+	display:inline-block;
+	font-family: 'Kaushan Script', cursive;
+	text-align: center;
+	margin-left: 50%;
+  color: whitesmoke;
+}
+
+.contents{
+	margin-top: 5%;
+	text-align: center;
 }
 
 .btn{
   position: absolute;
   right: 5%;
-  padding:10px;
+	padding:10px;
+	margin-top: 1%;
+
+
+	color: #FFF;
+	border-radius: 3px;
+	display: inline-block;
+	height: 25px;
+	width: 95px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 25px;
+	background: #1da1f3;
+	overflow: hidden;
+	text-decoration:none;
+
+
+}
+
+.re_btn{
+	color: #FFF;
+    border-radius: 3px;
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 50px;
+    background: #1da1f3;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 44%;
+    margin-top: 4%;
+    margin-right: 60%;
 }
 
 .tag{
-  display: inline-flex;
+	width: 100%;
+	
+}
+
+.main{
+	display: inline-block;
+    position: absolute;
+    right: 20%;
+		margin-top: 12px;
+		
+    color: #FFF;
+    border-radius: 3px;
+    display: inline-block;
+    height: 12px;
+    width: 60px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    background: #1da1f3;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color:black;
+
+		color: #FFF;
+		border-radius: 3px;
+		display: inline-block;
+		height: 25px;
+		width: 95px;
+		text-align: center;
+		font-size: 12px;
+		line-height: 25px;
+		background: #1da1f3;
+		overflow: hidden;
+		text-decoration:none;
+}
+
+.task_name{
+	display: inline-block;
 }
 
 .cp_ipcheck {
-	width: 90%;
-	margin: 20px auto;
+	width: 100%;
+	margin: auto;
   text-align: left;
-  display:inline-block;
+	display:inline-block;
+	background-color: whitesmoke;
+	padding-left: 10%;
 }
 @keyframes click-wave {
 	0% {
@@ -57,10 +174,24 @@
 	        appearance: none;
 }
 .cp_ipcheck .option-input02:hover {
-	background: #d6a9a9;
+	background: #d7cbcb;
+
+	position: relative;
+	top: 13.33333px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	margin-right: 0.5rem;
+	cursor: pointer;
+	transition: all 0.15s ease-out 0s;
+	color: #ffffff;
+	border: none;
+	outline: none;
 }
 .cp_ipcheck .option-input02:checked {
-	background: #da3c41;
+	background: skyblue;
 }
 .cp_ipcheck .option-input02:checked::before {
 	font-size: 20px;
@@ -71,14 +202,27 @@
 	height: 30px;
 	content: '✔';
 	text-align: center;
+
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin-right: 0.5rem;
+	cursor: pointer;
+	transition: all 0.15s ease-out 0s;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	
 }
 .cp_ipcheck .option-input02:checked::after {
 	position: relative;
-	display: block;
-	content: '';
-	-webkit-animation: click-wave 0.65s;
-	        animation: click-wave 0.65s;
-	background: #da3c41;
+	display: inline-block;
+	/* content: ''; */
+	background: silver;
+
+	/* -webkit-animation: click-wave 0.65s;
+	        animation: click-wave 0.65s; */
+
 }
 .cp_ipcheck .option-input02.radio {
 	border-radius: 50%;
@@ -88,7 +232,8 @@
 }
 .cp_ipcheck label {
 	line-height: 40px;
-	display: block;
+	display: inline-block;
+	position: relative;
 }
 .cp_ipcheck .option-input02:disabled {
 	cursor: not-allowed;
